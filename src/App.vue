@@ -11,7 +11,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "./node_modules/bootstrap/scss/bootstrap-reboot";
+@import "./node_modules/bootstrap/scss/bootstrap-grid";
+@import "./node_modules/bootstrap/scss/utilities";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
