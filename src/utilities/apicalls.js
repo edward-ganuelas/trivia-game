@@ -6,12 +6,11 @@ const getQuestions = async ()=>{
     let response = "";
     try{
         response = await axios.get(API.endpoints.easyMultiple);
-        console.log(response);
     }catch(e){
         console.log(e);
-        response = e;
+        // response = e;
     }
-    return response.data
+    return response
 }
 
 const apicalls = {
