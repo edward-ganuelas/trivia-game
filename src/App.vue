@@ -5,8 +5,13 @@
 </template>
 
 <script>
+import APICalls from './utilities/apicalls'
 export default {
-  name: 'App'
+  name: 'App',
+  mounted(){
+    // let questions = APICalls.getQuestions();
+    // console.log(questions);
+  }
 }
 </script>
 
