@@ -1,9 +1,11 @@
 <template>
-  <div class="hello">
-    <p v-html="question.question"></p>
-    <label v-for="(answer, num) in answers" v-bind:key="num" :for="getInputId(num)">
-      <input type="radio" :name="index" :id="getInputId(num)" :value="answer" v-on:change="checkAnswer(answer)" /> {{answer}}
-    </label>
+  <div class="col">
+    <div class="container">
+      <p v-html="question.question" class="col-12"></p>
+      <label v-for="(answer, num) in answers" v-bind:key="num" :for="getInputId(num)" class="col-6">
+        <input type="radio" :name="index" :id="getInputId(num)" :value="answer" v-on:change="checkAnswer(answer)" /> {{answer}}
+      </label>
+    </div>
   </div>
 </template>
 

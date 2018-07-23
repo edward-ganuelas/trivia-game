@@ -1,6 +1,6 @@
 <template>
-  <div id="index">
-    <div v-for="(question, index) in questions" v-bind:key="index">
+  <div id="index" class="container">
+    <div v-for="(question, index) in questions" v-bind:key="index" class="row">
       <question :question="question" :index="index" />
     </div>
   </div>
