@@ -1,5 +1,6 @@
 <template>
   <div id="index" class="container">
+    <p>Score: {{score}}/10</p>
     <div v-for="(question, index) in questions" v-bind:key="index" class="row">
       <question :question="question" :index="index" />
     </div>
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+import {get} from 'vuex-pathify'
 import APICalls from '../../utilities/apicalls'
 import Question from '../Question'
 export default {
@@ -24,6 +26,9 @@ export default {
     questionsPromise.then(x=>{
       this.questions = x.data.results;
     })
+  }, 
+  computed: {
+    score: get('Score')
   }
 }
 </script>

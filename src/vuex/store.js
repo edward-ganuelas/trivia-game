@@ -16,7 +16,8 @@ const getters = {
 }
 
 const mutations = {
-    ...make.mutations(state)
+    ...make.mutations(state),
+    incrementScore: state=> state.Score++
 }
 
 const store = new Vuex.Store({
