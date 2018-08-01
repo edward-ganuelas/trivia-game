@@ -35,5 +35,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
+.container{
+  padding-bottom: 200px;
+}
+.row{
+  border: solid 1px #000;
+  border-bottom: none;
+  padding: 15px 0;
+  &:last-of-type{
+    border-bottom: solid 1px #000;
+  }
+}
 </style>
